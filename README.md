@@ -1,6 +1,6 @@
 # Muhammad Sharjeel
 
-I'm a third-year Computer Engineering student at Stony Brook University with a strong interest in embedded systems, computer architecture, and real-time software design. My experience spans both software and hardware, from low-level embedded programming to processor design and reliability-focused research. I enjoy designing systems that are efficient, maintainable, and rooted in fundamental engineering principles.
+I'm a senior Computer Engineering student at Stony Brook University with a strong interest in embedded systems, computer architecture, and real-time software design. My experience spans both software and hardware, from low-level embedded programming to processor design and reliability-focused research. I enjoy designing systems that are efficient, maintainable, and rooted in fundamental engineering principles.
 
 ## Projects and Research
 
