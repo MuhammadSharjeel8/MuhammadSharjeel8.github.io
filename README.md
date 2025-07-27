@@ -60,6 +60,6 @@ ESP-IDF, Microchip Studio, MPLAB X, Logic Analyzers, Git, VS Code, Cadence OrCAD
 
 ## Contact
 
-**Email**: msharjeel7294@gmail.com  
+**Email**: msharjeel8365@gmail.com  
 **Location**: New York  
 **LinkedIn**: [linkedin.com/in/muhammadsharjeel2026](https://www.linkedin.com/in/muhammadsharjeel2026)
