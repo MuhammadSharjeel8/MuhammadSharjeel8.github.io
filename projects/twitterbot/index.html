@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Round-Robin Scheduling Model by Muhammad Sharjeel</title>
+  <title>Twitterbot Project by Muhammad Sharjeel</title>
   <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
   <header>
-    <h1>Round-Robin Scheduling Model in C for Linux Environments</h1>
+    <h1>Twitterbot: Automated Tweet Poster Using Python & Tweepy</h1>
     <p>Muhammad Sharjeel</p>
-    <p>Real-Time Operating Systems (Fall 2024)</p>
+    <p>Independent Project (Winter 2024)</p>
     <p>
-      <a href="https://github.com/MuhammadSharjeel8/round-robin-linux/tree/main" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/MuhammadSharjeel8/twitterbot" target="_blank" rel="noopener noreferrer">
         View Project Repository on GitHub
       </a>
     </p>
@@ -21,63 +21,47 @@
   <section>
     <h2>Project Description</h2>
     <p>
-      This project implements a simulation of the round-robin CPU scheduling algorithm in C, modeling how modern Linux-based operating systems allocate CPU time using time-sliced multitasking across multiple cores. The implementation includes linked-list–based queue management, I/O event handling, and detailed state tracking.
+      This project is a Python-based Twitterbot that posts tweets automatically using the Tweepy library. It uses OAuth for secure API access, formats tweet content dynamically, and supports both scheduled and manual posting.
     </p>
   </section>
 
   <section>
-    <h2>Assignment Summary</h2>
+    <h2>Technologies Used</h2>
     <ul>
-      <li>Simulates multi-core round-robin scheduling with configurable quantum</li>
-      <li>Manages processes with arrival times and I/O events</li>
-      <li>Implements process queues with linked lists</li>
-      <li>Handles process state transitions and memory cleanup</li>
+      <li>Python 3</li>
+      <li>Tweepy (Twitter API)</li>
+      <li>OAuth 1.0a authentication</li>
+      <li>Scheduling via <code>time</code> and <code>threading</code></li>
     </ul>
   </section>
 
   <section>
-    <h2>Design and Implementation</h2>
-    <p>
-      The scheduler simulates four CPU cores, dispatching processes according to round-robin rules. Processes are queued, scheduled, and preempted based on quantum expiration or I/O events, with service times properly decremented and memory managed dynamically.
-    </p>
-  </section>
-
-  <section>
-    <h2>File Structure</h2>
-    <dl>
-      <dt><code>sched.c</code></dt>
-      <dd>Main C source file containing the entire scheduling simulation, including all structs and functions.</dd>
-      <dt><code>input.txt</code></dt>
-      <dd>Input file specifying processes’ IDs, service times, and arrival times.</dd>
-    </dl>
-  </section>
-
-  <section>
-    <h2>How to Compile and Run</h2>
-    <pre><code>gcc -o sched sched.c
-./sched</code></pre>
-  </section>
-
-  <section>
-    <h2>Academic Acknowledgement</h2>
+    <h2>Features</h2>
     <ul>
-      <li>This project was completed as part of the ESE 333: Real-Time Operating Systems course, Fall 2024</li>
-      <li>Developed under the guidance of Yanhang Shi</li>
+      <li>Secure OAuth login and key management</li>
+      <li>Custom tweet formatting with hashtags</li>
+      <li>Support for periodic or event-triggered tweets</li>
+      <li>Error handling and status logging</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Sample Output</h2>
+    <pre><code>Tweet sent at 08:00: 'Good morning, world! ☀️ #MondayMotivation'</code></pre>
   </section>
 
   <section>
     <h2>Disclaimer</h2>
-    <h3>Academic Integrity Notice</h3>
+    <h3>API Usage Notice</h3>
     <p>
-      This codebase was developed solely for educational purposes in a Real-Time Operating Systems course. Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution. Any such use may constitute academic dishonesty or plagiarism.
+      This project is educational and abides by Twitter’s Developer Policy. Abuse of automation or spamming features may result in API key revocation or account suspension.
     </p>
   </section>
 
   <section>
     <h2>License</h2>
     <p>
-      This repository is provided as-is for study, learning, and personal exploration. Unauthorized redistribution for academic submission is strictly prohibited.
+      This project is open-source under the MIT License and is intended for learning and experimentation purposes.
     </p>
   </section>
 
