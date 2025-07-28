@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhammad Sharjeel - Portfolio</title>
+  <title>Muhammad Sharjeel – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,99 +20,44 @@
     <section>
       <h2>About Me</h2>
       <p>
-        I'm a Computer Engineering senior at Stony Brook University with a strong interest in embedded systems, computer architecture, and real-time software design. My experience spans both software and hardware, from low-level embedded programming to processor design and reliability-focused research. I enjoy designing systems that are efficient, maintainable, and rooted in fundamental engineering principles.
+        I'm a Computer Engineering senior at Stony Brook University with a strong interest in embedded systems, computer architecture, and real-time software design. I work at the intersection of hardware and software—building reliable systems that are efficient and grounded in solid engineering principles.
       </p>
     </section>
 
     <section>
-      <h2>Projects and Research</h2>
-
-      <article>
-        <h3>Research: Reliability of DNNs Regarding Injected Error</h3>
-        <p><strong>Sept 2024 – Present</strong></p>
-        <p>Currently researching how deep neural networks behave under simulated hardware-level errors using the GoldenEye platform. Focus areas include fault injection at various abstraction levels and analyzing how bit flips or logic faults affect model accuracy and system robustness. This project integrates low-level system understanding with AI reliability, and involves Docker-based simulation, custom error models, and metrics collection for system performance and degradation.</p>
+      <h2>Featured Project</h2>
+      <article class="highlight">
+        <h3><a href="projects/twitterbot/" target="_blank">Twitterbot – Python Automation with API Integration</a></h3>
+        <p><strong>Dec 2024</strong></p>
+        <p>
+          Built a Twitterbot using Python and the <code>simple_twit</code> library (a wrapper over Tweepy) to interact with Twitter’s API. The bot posts randomized quotes, tweets media, and retrieves user timelines. Robust error-handling and clean API interaction were emphasized. 
+          <br />
+          <a class="button" href="projects/twitterbot/" target="_blank">View Full Project</a>
+        </p>
       </article>
+    </section>
+
+    <section>
+      <h2>Other Projects</h2>
 
       <article>
         <h3>CAN Bus IoT System with ESP32</h3>
         <p><strong>Jul 2025 – Present</strong></p>
-        <p>Developing a distributed IoT architecture using multiple ESP32 microcontrollers and SN65HVD230 CAN transceivers. Each ESP32 node gathers sensor data and communicates over the CAN bus using the ESP-IDF TWAI driver. A particular node collects data and transmits it to a PC over Wi-Fi for live visualization. This project emphasizes understanding CAN protocol timing, arbitration, and bus reliability in embedded systems, and avoids reliance on automotive subsystems by using simulated data nodes.</p>
-      </article>
-
-      <article>
-        <h3>Twitterbot</h3>
-        <p><strong>Dec 2024</strong></p>
-        <p>Created a Twitterbot using Python and the simple_twit library (built on top of Tweepy) to interact with X's API. The bot retrieves and posts tweets, outputs the current time, and responds to other users. The project involved asynchronous networking, API handling, and error detection for robust autonomous operation.</p>
+        <p>Designed a distributed IoT system using ESP32 and SN65HVD230 CAN transceivers. Each node sends sensor data over a TWAI (CAN) bus to a master node that uploads data via Wi-Fi. Focused on FreeRTOS, arbitration timing, and fault tolerance.</p>
       </article>
 
       <article>
         <h3>Round-Robin Scheduler in Linux</h3>
         <p><strong>Oct 2024 – Nov 2024</strong></p>
-        <p>Implemented a round-robin process scheduler in a Linux environment using C. The system reads process definitions from an input file, simulates context switching, and incorporates I/O interrupt handling for increased realism. This project explored key concepts in real-time operating systems such as time slicing, ready queues, and preemption.</p>
-      </article>
-
-      <article>
-        <h3>Robot Chaos System</h3>
-        <p><strong>Oct 2023 – Dec 2023</strong></p>
-        <p>Developed an object-oriented simulation in C++ where multiple Robot objects are dynamically transferred across Room objects. The system used data structures including linked lists, stacks, and queues to manage interactions. Emphasis was placed on class design, memory management, and simulation logic in a collaborative team environment.</p>
+        <p>Built a round-robin process scheduler using C that reads process definitions, handles context switching, and simulates I/O interrupts. Demonstrated key concepts in real-time operating systems and preemptive multitasking.</p>
       </article>
 
       <article>
         <h3>Air Quality Monitoring System</h3>
         <p><strong>Jan 2025 – May 2025</strong></p>
-        <p>Built an embedded environmental sensing platform using the AVR128DB48 microcontroller and Sensirion SCD41 sensor via I2C. Programmed firmware in Embedded C to gather CO₂, temperature, and humidity data, and verified signal integrity with logic analyzers. Output was displayed in real time on an SPI-based SerLCD. The project emphasized sensor interfacing, real-time data display, and firmware documentation with Doxygen.</p>
+        <p>Developed a CO₂, temperature, and humidity sensing system using the AVR128DB48 and SCD41 sensor via I2C. Data was output to an SPI-based SerLCD. Code was documented with Doxygen for academic submission.</p>
       </article>
 
       <article>
-        <h3>Pipelined SIMD Multimedia Unit Design</h3>
+        <h3>Pipelined SIMD Multimedia Unit (VHDL)</h3>
         <p><strong>Aug 2024 – Dec 2024</strong></p>
-        <p>Designed a four-stage pipelined multimedia processor in VHDL. The system supported a reduced instruction set tailored for SIMD operations, inspired by the Intel SSE and Sony Cell SPU instruction sets. The project involved writing both structural and behavioral VHDL, managing pipeline hazards, and verifying timing correctness through simulation.</p>
-      </article>
-
-      <article>
-        <h3>Digital Clock</h3>
-        <p><strong>Aug 2022 – Dec 2022</strong></p>
-        <p>Assembled a digital clock from discrete components, soldered to a PCB. Programmed the timekeeping logic in C to display hours and minutes on seven-segment displays, with a blinking second indicator. Gained experience with oscillator circuits, display multiplexing, and PCB troubleshooting.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <p>
-        <strong>Programming Languages:</strong> C, C++, Python, VHDL, AVR Assembly, Java, HTML/CSS/JavaScript, SQL
-      </p>
-      <p>
-        <strong>Embedded Systems & Microcontrollers:</strong> AVR128DB48, ATmega4809, ESP32 (ESP-IDF), Arduino Nano
-      </p>
-      <p>
-        <strong>Technologies & Protocols:</strong> Embedded C, I2C (TWI), SPI, TWAI (CAN), Serial Communication, FreeRTOS, Interrupt-Driven Systems
-      </p>
-      <p>
-        <strong>Tools & Platforms:</strong> ESP-IDF, Microchip Studio, MPLAB X, Logic Analyzers, Git, VS Code, Cadence OrCAD, Docker, Doxygen, Flask
-      </p>
-    </section>
-
-    <section>
-      <h2>Interests</h2>
-      <ul>
-        <li>Embedded systems and real-time applications</li>
-        <li>Microcontroller and SoC-level architecture</li>
-        <li>Digital design and pipelined processor development</li>
-        <li>Sensor interfacing and IoT communication protocols</li>
-        <li>AI reliability and hardware fault modeling</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:msharjeel8365@gmail.com">msharjeel8365@gmail.com</a></p>
-      <p>Location: New York</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">linkedin.com/in/muhammadsharjeel2026</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Muhammad Sharjeel</p>
-  </footer>
-</body>
-</html>
