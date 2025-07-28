@@ -2,95 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Round-Robin Scheduling Model</title>
-  <link rel="stylesheet" href="../../style.css">
-  <style>
-    /* Ensure headers are centered */
-    h1, h2, h3 {
-      text-align: center;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .center-text {
-      text-align: center;
-    }
-
-    .repo-link {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .repo-link a {
-      color: #0366d6;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .repo-link a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Round-Robin Scheduling Model by Muhammad Sharjeel</title>
+  <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="repo-link">
-      <a href="https://github.com/MuhammadSharjeel8/round-robin-linux/tree/main" target="_blank">
+  <header>
+    <h1>Round-Robin Scheduling Model in C for Linux Environment</h1>
+    <p>Muhammad Sharjeel</p>
+    <p>Real-Time Operating Systems</p>
+    <p>
+      <a href="https://github.com/MuhammadSharjeel8/round-robin-linux/tree/main" target="_blank" rel="noopener noreferrer">
         View Project Repository on GitHub
       </a>
-    </div>
+    </p>
+  </header>
 
-    <h1>Round-Robin Scheduling Model in C</h1>
-    <p class="center-text">Muhammad Sharjeel</p>
-    <h3 class="center-text">ESE 333: Real-Time Operating Systems</h3>
-
-    <h2>Project Overview</h2>
+  <section>
+    <h2>Project Description</h2>
     <p>
       This project implements a simulation of the round-robin CPU scheduling algorithm in C, modeling how modern Linux-based operating systems allocate CPU time using time-sliced multitasking across multiple cores. The implementation includes linked-list–based queue management, I/O event handling, and detailed state tracking.
     </p>
+  </section>
 
-    <h2>Platform & Tools</h2>
+  <section>
+    <h2>Assignment Summary</h2>
     <ul>
-      <li>Tested on Ubuntu via WSL (Windows 11)</li>
-      <li>Also tested on Ubuntu ARM64 via VirtualBuddy (macOS M3)</li>
-      <li>Written in C and compiled with GCC</li>
+      <li>Simulates multi-core round-robin scheduling with configurable quantum</li>
+      <li>Manages processes with arrival times and I/O events</li>
+      <li>Implements process queues with linked lists</li>
+      <li>Handles process state transitions and memory cleanup</li>
     </ul>
+  </section>
 
-    <h2>Key Features</h2>
-    <ul>
-      <li>Multi-core simulation (4 cores)</li>
-      <li>Round-robin scheduler with configurable time quantum</li>
-      <li>Support for I/O blocking and process state transitions</li>
-      <li>Accurate simulation of real-time system behavior</li>
-    </ul>
+  <section>
+    <h2>Design and Implementation</h2>
+    <p>
+      The scheduler simulates four CPU cores, dispatching processes according to round-robin rules. Processes are queued, scheduled, and preempted based on quantum expiration or I/O events, with service times properly decremented and memory managed dynamically.
+    </p>
+  </section>
 
-    <h2>How to Run</h2>
+  <section>
+    <h2>File Structure</h2>
+    <dl>
+      <dt><code>sched.c</code></dt>
+      <dd>Main C source file containing the entire scheduling simulation, including all structs and functions.</dd>
+      <dt><code>input.txt</code></dt>
+      <dd>Input file specifying processes’ IDs, service times, and arrival times.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>How to Compile and Run</h2>
     <pre><code>gcc -o sched sched.c
 ./sched</code></pre>
+  </section>
 
+  <section>
     <h2>Disclaimer</h2>
+    <h3>Academic Integrity Notice</h3>
     <p>
-      ⚠️ <strong>Academic Integrity Notice:</strong><br/>
-      This codebase was developed solely for educational purposes in a Real-Time Operating Systems course.
-      Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution.
-      Any such use may constitute academic dishonesty or plagiarism.
+      This codebase was developed solely for educational purposes in a Real-Time Operating Systems course. Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution. Any such use may constitute academic dishonesty or plagiarism.
     </p>
+  </section>
 
+  <section>
     <h2>License</h2>
     <p>
-      This repository is provided as-is for study, learning, and personal exploration.
-      Unauthorized redistribution for academic submission is strictly prohibited.
+      This repository is provided as-is for study, learning, and personal exploration. Unauthorized redistribution for academic submission is strictly prohibited.
     </p>
+  </section>
 
+  <section>
     <h2>Contact</h2>
-    <p class="center-text">
-      <a href="https://linkedin.com/in/muhammadsharjeel2026" target="_blank">Connect on LinkedIn</a>
-    </p>
-  </div>
+    <p>Email: <a href="mailto:msharjeel8365@gmail.com">msharjeel8365@gmail.com</a></p>
+    <p>Location: New York</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">linkedin.com/in/muhammadsharjeel2026</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Muhammad Sharjeel</p>
+  </footer>
 </body>
 </html>
