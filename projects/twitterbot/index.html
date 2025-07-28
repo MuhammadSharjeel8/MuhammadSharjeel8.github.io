@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Twitterbot Project by Muhammad Sharjeel</title>
-  <link rel="stylesheet" href="../../style.css" />
+  <title>Twitterbot Python Project by Muhammad Sharjeel</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
-    <h1>Twitterbot: Automated Tweet Poster Using Python & Tweepy</h1>
+    <h1>Twitterbot Python Project</h1>
     <p>Muhammad Sharjeel</p>
-    <p>Independent Project (Winter 2024)</p>
+    <p>Digital Intelligence (Fall 2024)</p>
     <p>
-      <a href="https://github.com/MuhammadSharjeel8/twitterbot" target="_blank" rel="noopener noreferrer">
-        View Project Repository on GitHub
+      <a href="https://github.com/MuhammadSharjeel8/twitterbot-python" target="_blank" rel="noopener noreferrer">
+        View the Twitterbot Project Repository (Code & Files)
       </a>
     </p>
   </header>
@@ -21,50 +21,82 @@
   <section>
     <h2>Project Description</h2>
     <p>
-      This project is a Python-based Twitterbot that posts tweets automatically using the Tweepy library. It uses OAuth for secure API access, formats tweet content dynamically, and supports both scheduled and manual posting.
+      This project involves building a Twitterbot using Python and the
+      <code>simple_twit</code> library (a simplified wrapper for Tweepy) to interact with Twitter’s API.
+      The bot performs automated interactions such as retrieving tweets from timelines and posting tweets (including media).
     </p>
   </section>
 
   <section>
-    <h2>Technologies Used</h2>
+    <h2>Assignment Summary</h2>
     <ul>
-      <li>Python 3</li>
-      <li>Tweepy (Twitter API)</li>
-      <li>OAuth 1.0a authentication</li>
-      <li>Scheduling via <code>time</code> and <code>threading</code></li>
+      <li>Created a unique Twitter account for the project using assigned credentials</li>
+      <li>Used <code>simple_twit</code> for all Twitter API interactions</li>
+      <li>Completed tasks like:
+        <ul>
+          <li>Retrieve and print 3 most recent tweets from the bot’s home timeline</li>
+          <li>Retrieve and print 5 most recent tweets from another user</li>
+          <li>Post a single tweet and a media tweet</li>
+        </ul>
+      </li>
+      <li>Developed a Twitterbot that posts randomized quotes</li>
+      <li>Followed Twitter’s automation rules responsibly</li>
     </ul>
   </section>
 
   <section>
-    <h2>Features</h2>
-    <ul>
-      <li>Secure OAuth login and key management</li>
-      <li>Custom tweet formatting with hashtags</li>
-      <li>Support for periodic or event-triggered tweets</li>
-      <li>Error handling and status logging</li>
-    </ul>
+    <h2>Design and Implementation</h2>
+    <p>
+      The bot randomly selects quotes from a predefined list and posts them. It also demonstrates interaction
+      capabilities including reading timelines, tweeting text, and posting media content.
+    </p>
   </section>
 
   <section>
-    <h2>Sample Output</h2>
-    <pre><code>Tweet sent at 08:00: 'Good morning, world! ☀️ #MondayMotivation'</code></pre>
+    <h2>Example Output</h2>
+    <div class="gallery">
+      <img src="./01_first_image.jpeg" alt="First example output" />
+      <img src="./02_second_image.jpeg" alt="Second example output" />
+      <img src="./03_third_image.jpeg" alt="Third example output" />
+      <img src="./04_fourth_image.jpeg" alt="Fourth example output" />
+    </div>
+  </section>
+
+  <section>
+    <h2>File Structure</h2>
+    <dl>
+      <dt><code>mytwitterbot.py</code></dt>
+      <dd>Defines the Twitterbot’s logic and behavior.</dd>
+      <dt><code>simple_twit.py</code></dt>
+      <dd>Simplified interface for authenticated Twitter API access.</dd>
+      <dt><code>media/</code></dt>
+      <dd>(Optional) Folder for any images or media used in tweets.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Academic Acknowledgement</h2>
+    <ul>
+      <li>This project was part of the IAE 101 course, Fall 2024</li>
+      <li>Base code and the <code>simple_twit</code> interface were authored by Christopher Kane and Greg Zborovsky</li>
+    </ul>
   </section>
 
   <section>
     <h2>Disclaimer</h2>
-    <h3>API Usage Notice</h3>
+    <h3>Academic Integrity Notice</h3>
     <p>
-      This project is educational and abides by Twitter’s Developer Policy. Abuse of automation or spamming features may result in API key revocation or account suspension.
+      This codebase was developed solely for educational purposes in a Digital Intelligence course. Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution. Any such use may constitute academic dishonesty or plagiarism.
     </p>
   </section>
-
+  
   <section>
     <h2>License</h2>
     <p>
-      This project is open-source under the MIT License and is intended for learning and experimentation purposes.
+      This repository is provided as is for study, learning, and personal exploration. Unauthorized redistribution for academic submission is strictly prohibited.
     </p>
   </section>
-
+  
   <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:msharjeel8365@gmail.com">msharjeel8365@gmail.com</a></p>
