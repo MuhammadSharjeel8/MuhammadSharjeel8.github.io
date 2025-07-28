@@ -2,11 +2,11 @@
 
 /* CSS Variables for easy theming */
 :root {
-  --primary-color: #0d6efd;       /* Bootstrap Blue */
-  --secondary-color: #6c757d;     /* Bootstrap Gray */
-  --background-color: #f8f9fa;    /* Light gray background */
-  --text-color: #212529;          /* Dark text */
-  --heading-color: #0a58ca;       /* Darker blue for headings */
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --heading-color: #0a58ca;
   --link-color: var(--primary-color);
   --link-hover-color: #0b5ed7;
 
@@ -16,7 +16,6 @@
   --border-radius: 4px;
 }
 
-/* Reset and base styles */
 *,
 *::before,
 *::after {
@@ -34,7 +33,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings */
 h1 {
   color: var(--heading-color);
   margin-top: 0;
@@ -56,13 +54,11 @@ h2 {
   margin-bottom: 0.75em;
 }
 
-/* Paragraphs */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* Links */
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -76,7 +72,6 @@ a:focus {
   outline: none;
 }
 
-/* Header */
 header {
   padding: 2rem 1rem;
   background-color: white;
@@ -84,14 +79,12 @@ header {
   text-align: center;
 }
 
-/* Sections */
 section {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Lists */
 ul {
   padding-left: 1.5rem;
 }
@@ -100,7 +93,6 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Code blocks and inline code */
 code {
   font-family: 'Source Code Pro', monospace, monospace;
   background-color: #e9ecef;
@@ -109,7 +101,6 @@ code {
   font-size: 0.95em;
 }
 
-/* Image gallery for project outputs */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +121,6 @@ code {
   transform: scale(1.05);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -141,8 +131,8 @@ footer {
   background-color: white;
 }
 
-/* Navigation Buttons – Enhanced Style */
-.nav-buttons {
+/* ✅ Navigation Buttons – Now matches your HTML (.project-nav) */
+.project-nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -161,6 +151,7 @@ footer {
   transition: transform 0.2s ease-in-out, background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  min-width: 100px;
 }
 
 .nav-button:hover {
@@ -174,11 +165,6 @@ footer {
   pointer-events: none;
   transform: none;
 }
-
-/* Optional: per-button colors
-.nav-button:first-child { background-color: #dc3545; }  // red
-.nav-button:nth-child(2) { background-color: #198754; } // green
-*/
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
@@ -198,9 +184,14 @@ footer {
     flex-direction: column;
   }
 
-  .nav-buttons {
+  .project-nav {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  .nav-button {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.1rem;
   }
 }
