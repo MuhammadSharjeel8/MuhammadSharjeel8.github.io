@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Round-Robin Scheduling Model in C for Linux Environments</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Round-Robin Scheduling Model in C for Linux Environments</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Round-Robin Scheduling Model in C for Linux Environments</h1>
-        <p>Muhammad Sharjeel</p>
-        <p><em>Simulation of CPU round-robin scheduling on a 4-core processor</em></p>
-        <p><a href="https://github.com/MuhammadSharjeel8/round-robin-linux/tree/main" target="_blank" rel="noopener noreferrer">View the Private GitHub Repository</a></p>
-    </header>
+  <main>
+    <h1>Round-Robin Scheduling Model in C for Linux Environments</h1>
+    <p>by Muhammad Sharjeel</p>
+    <h2>ESE 333: Real-Time Operating Systems</h2>
 
-    <main>
-        <section>
-            <h2>Project Overview</h2>
-            <p>This project implements a round-robin CPU scheduling algorithm in C designed to simulate a 4-core CPU environment running on Linux systems. It demonstrates fundamental operating system concepts such as multitasking, process scheduling, and I/O interrupt handling.</p>
-        </section>
+    <section id="overview">
+      <h2>Project Overview</h2>
+      <p>This project implements a simulation of a round-robin CPU scheduling algorithm using the C programming language. It models how modern operating systems distribute CPU time across multiple cores using time-sliced multitasking. The simulation also handles process arrivals, service time tracking, and I/O interruptions (in Part 3).</p>
+    </section>
 
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Round-robin scheduling with configurable time quantum</li>
-                <li>Multi-core (4 cores) CPU simulation</li>
-                <li>Linked list–based process queue management</li>
-                <li>I/O interrupt event simulation and handling</li>
-                <li>Designed and tested for Linux environments</li>
-            </ul>
-        </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Round-robin scheduling with a configurable time quantum</li>
+        <li>Multi-core (4-core) CPU simulation</li>
+        <li>Linked list–based queue management</li>
+        <li>I/O event handling</li>
+        <li>Accurate time and process state tracking</li>
+        <li>Designed to run on Linux systems</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>How to Run</h2>
-            <p>To compile and run the program on a Linux system or WSL:</p>
-            <pre><code>gcc -o sched sched.c
-./sched
-            </code></pre>
-        </section>
+    <section id="getting-started">
+      <h2>Getting Started</h2>
 
-        <section>
-            <h2>Disclaimer</h2>
-            <p><strong>Academic Integrity Notice:</strong> This project is intended solely for educational purposes. Do not copy or submit this work as your own in any academic setting, as it may violate institutional policies on academic honesty.</p>
-        </section>
-    </main>
+      <h3>Compilation</h3>
+      <pre><code>gcc -o sched sched.c</code></pre>
 
-    <footer>
-        <p>© 2025 Muhammad Sharjeel</p>
-    </footer>
+      <h3>Execution</h3>
+      <pre><code>./sched</code></pre>
+
+      <p>This project was tested in Linux environments using both native systems and virtual machines, including:</p>
+      <ul>
+        <li>Ubuntu ARM64 via VirtualBuddy on macOS (M3)</li>
+        <li>Ubuntu via WSL on Windows 11</li>
+      </ul>
+    </section>
+
+    <section id="disclaimer">
+      <h2>Disclaimer</h2>
+      <p><strong>Academic Integrity Notice</strong><br />
+      This codebase was developed solely for educational purposes in a Real-Time Operating Systems course.<br />
+      Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution.<br />
+      Any such use may constitute academic dishonesty or plagiarism.</p>
+    </section>
+
+    <section id="license">
+      <h2>License</h2>
+      <p>This repository is provided as-is for study, learning, and personal exploration.<br />
+      Unauthorized redistribution for academic submission is strictly prohibited.</p>
+    </section>
+
+    <section id="repository">
+      <h2>Repository Links</h2>
+      <ul>
+        <li><a href="https://github.com/MuhammadSharjeel8/round-robin-linux/tree/main" target="_blank" rel="noopener noreferrer">Main Repository (Private)</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>Email: <a href="mailto:muhammadsharjeel@example.com">muhammadsharjeel@example.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">linkedin.com/in/muhammadsharjeel2026</a></li>
+        <li>GitHub: <a href="https://github.com/MuhammadSharjeel8" target="_blank" rel="noopener noreferrer">github.com/MuhammadSharjeel8</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
