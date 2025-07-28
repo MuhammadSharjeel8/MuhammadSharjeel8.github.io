@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Twitterbot Python Project by Muhammad Sharjeel</title>
-  <link rel="stylesheet" href="/style.css" />
+  <title>Round-Robin Scheduling Model by Muhammad Sharjeel</title>
+  <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
   <header>
-    <h1>Twitterbot Python Project</h1>
+    <h1>Round-Robin Scheduling Model in C for Linux Environments</h1>
     <p>Muhammad Sharjeel</p>
-    <p>Digital Intelligence (Fall 2024)</p>
+    <p>Real-Time Operating Systems (Fall 2024)</p>
     <p>
-      <a href="https://github.com/MuhammadSharjeel8/twitterbot-python" target="_blank" rel="noopener noreferrer">
-        View the Twitterbot Project Repository (Code & Files)
+      <a href="https://github.com/MuhammadSharjeel8/round-robin-linux/tree/main" target="_blank" rel="noopener noreferrer">
+        View Project Repository on GitHub
       </a>
     </p>
   </header>
@@ -21,64 +21,48 @@
   <section>
     <h2>Project Description</h2>
     <p>
-      This project involves building a Twitterbot using Python and the
-      <code>simple_twit</code> library (a simplified wrapper for Tweepy) to interact with Twitter’s API.
-      The bot performs automated interactions such as retrieving tweets from timelines and posting tweets (including media).
+      This project implements a simulation of the round-robin CPU scheduling algorithm in C, modeling how modern Linux-based operating systems allocate CPU time using time-sliced multitasking across multiple cores. The implementation includes linked-list–based queue management, I/O event handling, and detailed state tracking.
     </p>
   </section>
 
   <section>
     <h2>Assignment Summary</h2>
     <ul>
-      <li>Created a unique Twitter account for the project using assigned credentials</li>
-      <li>Used <code>simple_twit</code> for all Twitter API interactions</li>
-      <li>Completed tasks like:
-        <ul>
-          <li>Retrieve and print 3 most recent tweets from the bot’s home timeline</li>
-          <li>Retrieve and print 5 most recent tweets from another user</li>
-          <li>Post a single tweet and a media tweet</li>
-        </ul>
-      </li>
-      <li>Developed a Twitterbot that posts randomized quotes</li>
-      <li>Followed Twitter’s automation rules responsibly</li>
+      <li>Simulates multi-core round-robin scheduling with configurable quantum</li>
+      <li>Manages processes with arrival times and I/O events</li>
+      <li>Implements process queues with linked lists</li>
+      <li>Handles process state transitions and memory cleanup</li>
     </ul>
   </section>
 
   <section>
     <h2>Design and Implementation</h2>
     <p>
-      The bot randomly selects quotes from a predefined list and posts them. It also demonstrates interaction
-      capabilities including reading timelines, tweeting text, and posting media content.
+      The scheduler simulates four CPU cores, dispatching processes according to round-robin rules. Processes are queued, scheduled, and preempted based on quantum expiration or I/O events, with service times properly decremented and memory managed dynamically.
     </p>
-  </section>
-
-  <section>
-    <h2>Example Output</h2>
-    <div class="gallery">
-      <img src="./01_first_image.jpeg" alt="First example output" />
-      <img src="./02_second_image.jpeg" alt="Second example output" />
-      <img src="./03_third_image.jpeg" alt="Third example output" />
-      <img src="./04_fourth_image.jpeg" alt="Fourth example output" />
-    </div>
   </section>
 
   <section>
     <h2>File Structure</h2>
     <dl>
-      <dt><code>mytwitterbot.py</code></dt>
-      <dd>Defines the Twitterbot’s logic and behavior.</dd>
-      <dt><code>simple_twit.py</code></dt>
-      <dd>Simplified interface for authenticated Twitter API access.</dd>
-      <dt><code>media/</code></dt>
-      <dd>(Optional) Folder for any images or media used in tweets.</dd>
+      <dt><code>sched.c</code></dt>
+      <dd>Main C source file containing the entire scheduling simulation, including all structs and functions.</dd>
+      <dt><code>input.txt</code></dt>
+      <dd>Input file specifying processes’ IDs, service times, and arrival times.</dd>
     </dl>
+  </section>
+
+  <section>
+    <h2>How to Compile and Run</h2>
+    <pre><code>gcc -o sched sched.c
+./sched</code></pre>
   </section>
 
   <section>
     <h2>Academic Acknowledgement</h2>
     <ul>
-      <li>This project was part of the IAE 101 course, Fall 2024</li>
-      <li>Base code and the <code>simple_twit</code> interface were authored by Christopher Kane and Greg Zborovsky</li>
+      <li>This project was completed as part of the ESE 333: Real-Time Operating Systems course, Fall 2024</li>
+      <li>Developed under the guidance of Yanhang Shi</li>
     </ul>
   </section>
 
@@ -86,17 +70,17 @@
     <h2>Disclaimer</h2>
     <h3>Academic Integrity Notice</h3>
     <p>
-      This codebase was developed solely for educational purposes in a Digital Intelligence course. Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution. Any such use may constitute academic dishonesty or plagiarism.
+      This codebase was developed solely for educational purposes in a Real-Time Operating Systems course. Do not copy, submit, or reuse any part of this code to fulfill academic requirements at any institution. Any such use may constitute academic dishonesty or plagiarism.
     </p>
   </section>
-  
+
   <section>
     <h2>License</h2>
     <p>
-      This repository is provided as is for study, learning, and personal exploration. Unauthorized redistribution for academic submission is strictly prohibited.
+      This repository is provided as-is for study, learning, and personal exploration. Unauthorized redistribution for academic submission is strictly prohibited.
     </p>
   </section>
-  
+
   <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:msharjeel8365@gmail.com">msharjeel8365@gmail.com</a></p>
@@ -104,12 +88,13 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">linkedin.com/in/muhammadsharjeel2026</a></p>
   </section>
 
-  <nav class="navigation-buttons">
-    <button class="nav-button" disabled>Previous</button>
-    <a href="/index.html" class="nav-button">Home</a>
-    <a href="/projects/round-robin-linux/" class="nav-button">Next</a>
-  </nav>
-  
+  <!-- Navigation Buttons -->
+  <section class="project-nav">
+    <span class="nav-button disabled">← Previous</span>
+    <a href="/" class="nav-button">Home</a>
+    <a href="/projects/twitterbot/" class="nav-button">Next →</a>
+  </section>
+
   <footer>
     <p>© 2025 Muhammad Sharjeel</p>
   </footer>
