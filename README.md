@@ -10,7 +10,7 @@ Currently researching how deep neural networks behave under simulated hardware-l
 
 ### CAN Bus IoT System with ESP32  
 *Jul 2025 – Present*  
-Developing a distributed IoT architecture using multiple ESP32 microcontrollers and SN65HVD230 CAN transceivers. Each ESP32 node gathers sensor data and communicates over the CAN bus using the ESP-IDF TWAI driver. A particular node collects data and transmits it to a PC over Wi-Fi for live visualization. This project emphasizes understanding CAN protocol timing, arbitration, and bus reliability in embedded systems, and avoids reliance on automotive subsystems by using simulated data nodes.
+Developing a distributed IoT architecture using multiple ESP32 microcontrollers and SN65HVD230 CAN transceivers. Each ESP32 node gathers sensor data and communicates over the CAN bus using the ESP-IDF TWAI driver. A particular node collects data and transmits it to a PC over Wi-Fi for live visualization. This project emphasizes understanding CAN protocol timing and bus reliability in embedded systems, and avoids reliance on automotive subsystems by using simulated data nodes.
 
 ### Twitterbot  
 *Dec 2024*  
