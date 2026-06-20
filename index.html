@@ -2,91 +2,419 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhammad Sharjeel – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Muhammad Sharjeel | Computer Engineering Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Muhammad Sharjeel</h1>
-    <p>Computer Engineering Senior at Stony Brook University</p>
-    <nav>
-      <a href="mailto:msharjeel8365@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="nav-logo">Muhammad Sharjeel</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Engineering senior at Stony Brook University with a strong interest in embedded systems, computer architecture, and real-time software design. I work at the intersection of hardware and software—building reliable systems that are efficient and grounded in solid engineering principles.
-      </p>
-    </section>
+    <!-- Hero / Main Heading -->
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Computer Engineering Graduate</p>
 
-    <section>
-      <h2>Projects</h2>
+        <h1>Embedded Systems, Real-Time Software, and Hardware-Software Integration</h1>
 
-      <article>
-        <h3>CAN Bus IoT System with ESP32</h3>
-        <p><strong>Jul 2025 – Present</strong></p>
-        <p>Developing a distributed IoT architecture using multiple ESP32 microcontrollers and SN65HVD230 CAN transceivers. Each ESP32 node gathers sensor data and communicates over the CAN bus using the ESP-IDF TWAI driver. A particular node collects data and transmits it to a PC over Wi-Fi for live visualization. This project emphasizes understanding CAN protocol timing and bus reliability in embedded systems, and avoids reliance on automotive subsystems by using simulated data nodes.</p>
-      </article>
-
-      <article>
-        <h3><a href="https://muhammadsharjeel8.github.io/projects/round-robin-linux/" target="_blank" rel="noopener noreferrer">Round-Robin Scheduler in Linux</a></h3>
-        <p><strong>Oct 2024 – Nov 2024</strong></p>
-        <p>
-          Built a round-robin process scheduler using C that reads process definitions, handles context switching, and simulates I/O interrupts. Demonstrated key concepts in real-time operating systems and preemptive multitasking.
-          <br />
-          <a href="projects/round-robin-linux/" target="_blank">View Full Project</a>
+        <p class="hero-text">
+          I build practical systems that connect low-level hardware interfaces with reliable software,
+          including embedded firmware, sensor integration, communication protocols, and real-time data visualization.
         </p>
-      </article>
 
-      <article>
-        <h3>Air Quality Monitoring System</h3>
-        <p><strong>Jan 2025 – May 2025</strong></p>
-        <p>Developed a CO₂, temperature, and humidity sensing system using the AVR128DB48 and SCD41 sensor via I2C. Data was output to an SPI-based SerLCD. Code was documented with Doxygen for academic submission.</p>
-      </article>
+        <div class="hero-actions">
+          <a href="#projects" class="button primary">View Projects</a>
+          <a href="#contact" class="button secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
 
-      <article class="highlight">
-        <h3><a href="projects/twitterbot/" target="_blank">Twitterbot – Python Automation with API Integration</a></h3>
-        <p><strong>Dec 2024</strong></p>
+    <!-- About Me -->
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="content-card">
         <p>
-          Built a Twitterbot using Python and the <code>simple_twit</code> library (a wrapper over Tweepy) to interact with Twitter’s API. The bot posts randomized quotes, tweets media, and retrieves user timelines. Robust error-handling and clean API interaction were emphasized.
-          <br />
-          <a href="projects/twitterbot/" target="_blank">View Full Project</a>
+          I’m a Computer Engineering graduate from Stony Brook University with a strong interest in embedded systems,
+          real-time software, and hardware-software integration. My work focuses on building practical systems that
+          connect low-level hardware interfaces with reliable software, including microcontroller firmware, sensor
+          integration, communication protocols, and real-time data visualization.
         </p>
-      </article>
 
-      <article>
-        <h3>Pipelined SIMD Multimedia Unit (VHDL)</h3>
-        <p><strong>Aug 2024 – Dec 2024</strong></p>
-        <p>Implemented a 4-stage pipelined multimedia processor in VHDL inspired by Intel SSE and Cell SPU. Supported custom SIMD instructions and pipelining logic including hazard handling.</p>
-      </article>
-
+        <p>
+          I’ve worked on projects involving ESP32-based systems, CAN bus communication, RGB-D sensing, thermal imaging,
+          environmental monitoring, Python-based data processing, and C/C++ software development. These experiences have
+          strengthened my ability to debug across hardware and software layers, design modular systems, and think through
+          engineering tradeoffs involving timing, reliability, and system constraints.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> C, C++, Python, VHDL, AVR Assembly, HTML/CSS/JavaScript, Java, SQL</li>
-        <li><strong>Embedded Systems:</strong> AVR128DB48, ATmega4809, ESP32 (ESP-IDF), Arduino Nano</li>
-        <li><strong>Technologies:</strong> SPI, I2C, TWAI (CAN), FreeRTOS, Serial, Interrupts</li>
-        <li><strong>Tools:</strong> ESP-IDF, MPLAB X, Git, Logic Analyzers, Docker, Doxygen, Flask</li>
-      </ul>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <!-- CAN Bus Project -->
+        <article class="project-card featured-card">
+          <div class="project-image placeholder">
+            <p>Vehicle Dashboard Image / Screenshot</p>
+          </div>
+
+          <div class="project-content">
+            <h3>Real-Time Vehicle Dashboard IoT System</h3>
+
+            <p class="project-summary">
+              ESP32-based CAN bus telemetry system that streams vehicle data over Wi-Fi to a real-time C++ desktop dashboard.
+            </p>
+
+            <div class="tag-list">
+              <span>ESP32</span>
+              <span>ESP-IDF</span>
+              <span>FreeRTOS</span>
+              <span>CAN/TWAI</span>
+              <span>SN65HVD230</span>
+              <span>TCP/IP</span>
+              <span>C++</span>
+              <span>SFML</span>
+              <span>ImGui</span>
+              <span>CMake</span>
+            </div>
+
+            <p>
+              Built an embedded vehicle telemetry system that reads CAN bus frames using an ESP32 and streams the data
+              over Wi-Fi to a C++ desktop dashboard for real-time visualization.
+            </p>
+
+            <ul>
+              <li>Configured ESP32 CAN/TWAI communication using SN65HVD230 transceivers.</li>
+              <li>Designed a Wi-Fi/TCP pipeline for transmitting CAN frame data.</li>
+              <li>Built a C++ dashboard to display decoded OBD-II telemetry.</li>
+              <li>Implemented a structured packet format for transmitting CAN IDs, DLC values, and data bytes.</li>
+              <li>Validated the system through bench testing and vehicle-level integration.</li>
+            </ul>
+
+            <details>
+              <summary>Technical Description</summary>
+
+              <p>
+                Developed an end-to-end vehicle telemetry system that reads CAN bus frames using an ESP32 and transmits
+                the data over Wi-Fi to a desktop application for real-time visualization. The embedded firmware used the
+                ESP-IDF TWAI driver, FreeRTOS tasks, and a TCP communication layer to receive, package, and forward CAN
+                frames from the vehicle interface.
+              </p>
+
+              <p>
+                On the desktop side, I built a C++ dashboard using SFML and ImGui to receive telemetry packets, decode
+                supported OBD-II parameters, and display live vehicle information. The project emphasized embedded
+                communication, real-time data handling, packet design, and debugging across hardware, firmware, networking,
+                and desktop UI layers.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Hazard Navigation Project -->
+        <article class="project-card featured-card">
+          <div class="project-image placeholder">
+            <p>Hazard Navigation / Thermal Visualizer Image</p>
+          </div>
+
+          <div class="project-content">
+            <h3>Vision-Based Hazard Navigation System</h3>
+
+            <p class="project-summary">
+              Real-time RGB-D hazard detection and navigation assistance system designed to identify nearby obstacles
+              and household risks for visually impaired users.
+            </p>
+
+            <div class="tag-list">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>Intel RealSense D435i</span>
+              <span>Depth Sensing</span>
+              <span>RGB-D Processing</span>
+              <span>Object Detection</span>
+              <span>ESP32</span>
+              <span>FLIR Lepton</span>
+              <span>I2C</span>
+              <span>VoSPI</span>
+              <span>Wi-Fi/TCP</span>
+            </div>
+
+            <p>
+              Developed a vision-based hazard navigation system that uses RGB-D sensing to detect nearby obstacles,
+              motion, doors, people, and household hazards in real time.
+            </p>
+
+            <ul>
+              <li>Integrated the Intel RealSense D435i to process synchronized RGB and depth data.</li>
+              <li>Used depth thresholding and motion analysis to identify nearby obstacles and environmental changes.</li>
+              <li>Supported real-time visualization for debugging hazard detection outputs.</li>
+              <li>Evaluated performance tradeoffs between detection accuracy, frame rate, and system complexity.</li>
+              <li>Built an ESP32-based thermal visualization module to verify FLIR Lepton sensor data.</li>
+            </ul>
+
+            <details>
+              <summary>Technical Description</summary>
+
+              <p>
+                Developed a vision-based hazard navigation system focused on improving indoor safety for visually impaired
+                users. The main system used an Intel RealSense D435i camera to collect RGB and depth data, allowing the
+                software pipeline to identify nearby obstacles, people, doors, motion, and potential household hazards.
+              </p>
+
+              <p>
+                The primary detection pipeline was built in Python using OpenCV and RealSense depth data. Depth-based
+                thresholding was used to detect near-field obstacles, while additional computer vision modules supported
+                object and hazard detection. The project focused on real-time sensing, practical navigation assistance,
+                and balancing detection accuracy with frame-rate constraints.
+              </p>
+
+              <p>
+                As a supporting embedded systems component, I developed a thermal sensor visualization module using a
+                FLIR Lepton radiometric thermal camera connected to an ESP32. The purpose of this module was to verify
+                that thermal frame data could be captured, transmitted, reconstructed, and visualized before deeper
+                integration into the navigation system.
+              </p>
+
+              <p>
+                The ESP32 controlled the thermal camera over I2C, acquired frame data over VoSPI, and streamed thermal
+                output to a Python application over serial or Wi-Fi/TCP for visualization. This supporting module helped
+                demonstrate how embedded thermal sensing could extend the system’s ability to detect heat-related hazards,
+                while keeping the main project focused on RGB-D navigation and hazard detection.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Air Quality Project -->
+        <article class="project-card featured-card">
+          <div class="project-image placeholder">
+            <p>Air Quality Monitor Image</p>
+          </div>
+
+          <div class="project-content">
+            <h3>Air Quality Monitoring System</h3>
+
+            <p class="project-summary">
+              Embedded air quality monitor that measures CO₂, temperature, and humidity using an environmental sensor
+              and displays readings on an LCD.
+            </p>
+
+            <div class="tag-list">
+              <span>AVR128DB48</span>
+              <span>Embedded C</span>
+              <span>SCD41</span>
+              <span>I2C</span>
+              <span>SPI</span>
+              <span>LCD Display</span>
+              <span>Doxygen</span>
+            </div>
+
+            <p>
+              Built an embedded air quality monitoring system using an AVR microcontroller and an SCD41 environmental
+              sensor to measure CO₂ concentration, temperature, and humidity in real time.
+            </p>
+
+            <ul>
+              <li>Integrated the SCD41 environmental sensor over I2C.</li>
+              <li>Displayed CO₂, temperature, and humidity readings on an SPI-based LCD.</li>
+              <li>Wrote embedded C firmware for sensor polling, data formatting, and display updates.</li>
+              <li>Documented the codebase using Doxygen for readability and maintainability.</li>
+            </ul>
+
+            <details>
+              <summary>Technical Description</summary>
+
+              <p>
+                Developed an embedded air quality monitoring system using an AVR128DB48 microcontroller and an SCD41
+                environmental sensor. The system collected environmental readings over I2C, processed the sensor output
+                in firmware, and displayed CO₂ concentration, temperature, and humidity values on an SPI-based LCD.
+              </p>
+
+              <p>
+                The project focused on embedded sensor integration, peripheral communication, structured firmware design,
+                and clear documentation. I used Doxygen to document the codebase, making the firmware easier to understand,
+                maintain, and extend.
+              </p>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <!-- Additional Projects -->
+      <details class="section-details additional-projects">
+        <summary>Additional Projects</summary>
+
+        <div class="compact-grid">
+          <article class="compact-card">
+            <h3>Round-Robin Scheduler in C</h3>
+            <p class="project-summary">C, Operating Systems, Process Scheduling</p>
+
+            <p>
+              Implemented a round-robin process scheduler that simulated process execution, time slicing, context switching,
+              and I/O interrupt handling. This project reinforced operating systems concepts such as process states,
+              preemptive scheduling, and CPU scheduling behavior.
+            </p>
+          </article>
+
+          <article class="compact-card">
+            <h3>Pipelined SIMD Multimedia Unit</h3>
+            <p class="project-summary">VHDL, Digital Design, Pipelining, Simulation</p>
+
+            <p>
+              Designed a 4-stage pipelined SIMD multimedia unit in VHDL to support parallel arithmetic-style operations.
+              The project focused on datapath design, instruction execution, pipeline control, and hardware simulation/debugging.
+            </p>
+          </article>
+        </div>
+      </details>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:msharjeel8365@gmail.com">msharjeel8365@gmail.com</a></p>
-      <p>Location: New York</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">linkedin.com/in/muhammadsharjeel2026</a></p>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <details class="section-details">
+        <summary>Skills</summary>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <p>C, C++, Python, VHDL, Java</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Embedded & Hardware</h3>
+            <p>ESP32, ESP-IDF, FreeRTOS, AVR microcontrollers, GPIO, interrupts, sensor integration</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Protocols & Interfaces</h3>
+            <p>CAN/TWAI, SPI, I2C, UART, TCP/IP</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p>Git, CMake, Docker, VS Code, Doxygen, oscilloscope, logic analyzer</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Computer Vision & Data</h3>
+            <p>OpenCV, Intel RealSense SDK, NumPy, Matplotlib, PyTorch</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Additional Exposure</h3>
+            <p>HTML/CSS, JavaScript, SQL, Linux</p>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <details class="section-details">
+        <summary>Experience</summary>
+
+        <h3 class="subsection-title">Engineering Experience</h3>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <h4>Undergraduate Research Assistant — Hardware-Aware Machine Learning</h4>
+            <p class="meta">Stony Brook University | Sep 2024 – Present</p>
+
+            <p>
+              Worked with PyTorch-based simulation tools to evaluate how deep learning models respond to hardware faults,
+              reduced-precision number formats, and quantization settings. Ran experiments across multiple model and dataset
+              combinations to study accuracy behavior under different hardware-aware configurations.
+            </p>
+          </article>
+
+          <article class="experience-card">
+            <h4>Undergraduate Teaching Assistant — Programming Fundamentals</h4>
+            <p class="meta">Stony Brook University | Jan 2026 – May 2026</p>
+
+            <p>
+              Supported students in an introductory C programming course for electrical and computer engineering students.
+              Helped students understand programming fundamentals, debugging strategies, structured labs, and concepts such
+              as bitwise operations, file I/O, finite state machines, stacks, and linked lists.
+            </p>
+          </article>
+
+          <article class="experience-card">
+            <h4>Lab Assistant — Electrical and Computer Engineering Labs</h4>
+            <p class="meta">Stony Brook University | Aug 2024 – May 2026</p>
+
+            <p>
+              Assisted students in hands-on engineering labs involving circuit assembly, debugging, soldering, lab equipment,
+              and Linux-based workstations. Supported course staff by helping maintain lab readiness and troubleshooting
+              hardware/software issues during lab sessions.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="subsection-title">Additional Work Experience</h3>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <h4>Retail Team Member / Customer-Facing Roles</h4>
+            <p class="meta">Target, Lowe’s, and other retail environments</p>
+
+            <p>
+              Worked in fast-paced customer-facing environments requiring clear communication, teamwork, organization, and
+              attention to detail. Developed experience supporting customers, handling operational tasks, and adapting quickly
+              to changing priorities.
+            </p>
+
+            <p>
+              These roles also gave me practical exposure to technology used in retail operations, including handheld
+              scanning devices, point-of-sale systems, inventory workflows, and customer service tools.
+            </p>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in Touch</h2>
+      </div>
+
+      <div class="content-card contact-card">
+        <p>
+          I’m interested in embedded software, firmware, real-time systems, and hardware-adjacent engineering opportunities.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:msharjeel8365@gmail.com">msharjeel8365@gmail.com</a>
+          <a href="https://github.com/muhammadsharjeel8" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/muhammadsharjeel2026" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>© 2025 Muhammad Sharjeel</p>
-  </footer>
 </body>
 </html>
