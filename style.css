@@ -82,8 +82,8 @@ li {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
-  font-size: 0.95rem;
+  gap: 1.75rem;
+  font-size: 0.98rem;
   color: var(--muted);
 }
 
@@ -100,7 +100,7 @@ li {
 .section {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 4.5rem 1.25rem;
+  padding: 3.5rem 1.25rem;
   scroll-margin-top: 80px;
 }
 
@@ -127,22 +127,22 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(2.1rem, 5vw, 4rem);
-  margin-bottom: 1.2rem;
-  max-width: 900px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  margin-bottom: 1.1rem;
+  max-width: 850px;
 }
 
 h2 {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+  margin-bottom: 0.45rem;
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
 }
 
 h4 {
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 /* ---------- Hero ---------- */
@@ -431,7 +431,7 @@ details p:last-child {
 
   .nav-links {
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.75rem 1rem;
   }
 
   .hero {
@@ -458,11 +458,11 @@ details p:last-child {
 
 @media (max-width: 520px) {
   .section {
-    padding: 3.5rem 1rem;
+    padding: 3rem 1rem;
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .nav-links {
