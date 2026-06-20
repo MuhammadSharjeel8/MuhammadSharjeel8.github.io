@@ -54,6 +54,11 @@ The portfolio content highlights experience with:
 ├── index.html      # Main portfolio webpage
 ├── style.css       # Website styling
 ├── README.md       # Repository documentation
+├── images/         # Project images and screenshots
+│   ├── can-dashboard.png
+│   ├── hazard-navigation.png
+│   ├── thermal-visualizer.png
+│   └── air-quality-monitor.png
 └── projects/       # Optional project-related files or assets
 ````
 
