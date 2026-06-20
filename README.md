@@ -64,5 +64,7 @@ This site serves as a central place to present my engineering projects, technica
 ## Contact
 
 **Email:** [msharjeel7294@gmail.com](mailto:msharjeel7294@gmail.com)
+
 **GitHub:** [github.com/muhammadsharjeel8](https://github.com/muhammadsharjeel8)
+
 **LinkedIn:** [linkedin.com/in/muhammadsharjeel2026](https://linkedin.com/in/muhammadsharjeel2026)
