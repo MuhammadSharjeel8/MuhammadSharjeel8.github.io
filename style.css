@@ -1,3 +1,4 @@
+```css
 /* ---------- Base Styles ---------- */
 
 :root {
@@ -127,8 +128,9 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(2.3rem, 6vw, 4.7rem);
+  font-size: clamp(2.1rem, 5vw, 4rem);
   margin-bottom: 1.2rem;
+  max-width: 900px;
 }
 
 h2 {
@@ -147,19 +149,21 @@ h4 {
 /* ---------- Hero ---------- */
 
 .hero {
-  min-height: 82vh;
+  min-height: 62vh;
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 .hero-content {
-  max-width: 780px;
+  max-width: 850px;
 }
 
 .hero-text {
   font-size: 1.1rem;
   color: var(--muted);
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .hero-actions {
@@ -433,7 +437,8 @@ details p:last-child {
 
   .hero {
     min-height: auto;
-    padding-top: 5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
   }
 
   .featured-card {
@@ -458,7 +463,7 @@ details p:last-child {
   }
 
   h1 {
-    font-size: 2.35rem;
+    font-size: 2.25rem;
   }
 
   .nav-links {
@@ -475,3 +480,4 @@ details p:last-child {
     font-size: 0.78rem;
   }
 }
+```
