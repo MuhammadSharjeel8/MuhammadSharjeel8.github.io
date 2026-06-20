@@ -337,12 +337,41 @@ details p:last-child {
 }
 
 .compact-card {
-  padding: 1.1rem;
+  padding: 1rem 1.1rem;
   background: rgba(36, 50, 74, 0.72);
+}
+
+.compact-card summary {
+  font-size: 1.05rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.compact-card summary:hover {
+  color: var(--accent);
+}
+
+.compact-card[open] summary {
+  color: var(--accent);
+  margin-bottom: 0.7rem;
 }
 
 .compact-card h3 {
   margin-bottom: 0.35rem;
+}
+
+.compact-card .project-summary {
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.compact-card .meta {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.compact-card p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Skills ---------- */
